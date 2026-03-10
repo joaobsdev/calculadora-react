@@ -1,70 +1,55 @@
-# Getting Started with Create React App
+# 🔢 Calculadora com React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Uma calculadora funcional desenvolvida em **React** para colocar em prática conceitos avançados de gerenciamento de estado e manipulação de eventos.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🚀 O Projeto
+O objetivo deste projeto foi ir além de uma interface simples, focando na lógica de como uma calculadora real processa dados, evita erros de digitação (como zeros à esquerda) e interage com o usuário tanto via clique quanto via teclado.
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## ✨ Funcionalidades
+- Operações matemáticas: soma, subtração, multiplicação e divisão.  
+- **Suporte a teclado:** Digite números e execute operações diretamente pelo teclado físico.  
+- **Tratamento de interface:** Limpeza de display e prevenção de múltiplos zeros iniciais.  
+- Interface responsiva e intuitiva.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 🧠 O que eu aprendi
+Este projeto foi um excelente exercício para dominar o fluxo de dados no React:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Gerenciamento de Estado: Usei o useState para controlar três pilares:
+currentNumber → Número atual no visor.
+firstNumber → Armazena o primeiro valor antes da operação.
+operation → Guarda o operador selecionado (+, -, *, /).
 
-### `npm run build`
+Ciclo de Vida com useEffect: Utilizado para criar um event listener global para o teclado. Implementei também a função de limpeza (cleanup) para remover o evento quando o componente é desmontado, evitando problemas de performance.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Organização de Funções (Handles): Estruturei funções como handleSumNumbers e handleOnClear para manter a lógica de cada botão isolada e fácil de manter.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🛠️ Tecnologias Utilizadas
+- **React.js** (Biblioteca principal)
+- **Styled Components** (Estilização isolada e dinâmica)
+- **Hooks:** `useState` e `useEffect`
 
-### `npm run eject`
+- ## Como rodar o projeto
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```bash
+# Clone o repositório
+git clone https://github.com/joaobsdev/calculadora-react.git
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# Entre na pasta
+cd calculadora-react
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+# Instale as dependências
+npm install
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 🔗 Links
+www.linkedin.com/in/joaopedro-bs
+l
+# Inicie o projeto
+npm run dev
