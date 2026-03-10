@@ -2,6 +2,7 @@
 
 Uma calculadora funcional desenvolvida em **React** para colocar em prática conceitos avançados de gerenciamento de estado e manipulação de eventos.
 
+<img width="1483" height="717" alt="image" src="https://github.com/user-attachments/assets/b20f595a-d49c-4822-8a4a-7d2060f69f21" />
 ---
 
 ## 🚀 O Projeto
